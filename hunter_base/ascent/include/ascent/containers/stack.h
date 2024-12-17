@@ -1,11 +1,11 @@
 // Copyright (c) 2016-2018 Anyar, Inc.
-// 
+//
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
-// 
+//
 //      http://www.apache.org/licenses/LICENSE-2.0
-// 
+//
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -51,7 +51,7 @@ namespace asc
          return ptr;
       }
 
-      const pointer operator->() const noexcept
+      pointer operator->() const noexcept
       {
          return ptr;
       }
@@ -110,7 +110,7 @@ namespace asc
          return *ptr;
       }
 
-      const pointer operator->() const
+      pointer operator->() const
       {
          return ptr;
       }
@@ -203,7 +203,7 @@ namespace asc
       {
          emplace_back(T());
       }
-      
+
       template <class Arg>
       void emplace_back(Arg&& x) noexcept
       {

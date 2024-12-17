@@ -1,11 +1,11 @@
 // Copyright (c) 2016-2017 Anyar, Inc.
-// 
+//
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
-// 
+//
 //      http://www.apache.org/licenses/LICENSE-2.0
-// 
+//
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -22,8 +22,8 @@ namespace asc
    using value_t = double; // float, double, etc.
    using state_t = std::vector<value_t>; // std::vector, std::deque, etc.
 
-   constexpr const value_t cx(long double v) { return static_cast<value_t>(v); }
-   constexpr const value_t operator"" _v(long double v) { return static_cast<value_t>(v); }
+   constexpr value_t cx(long double v) { return static_cast<value_t>(v); }
+   constexpr value_t operator"" _v(long double v) { return static_cast<value_t>(v); }
 
    struct AdaptiveIntegrator
    {
